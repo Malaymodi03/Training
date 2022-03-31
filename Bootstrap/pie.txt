@@ -1,0 +1,205 @@
+<section class="row">
+                    <!-- Pie Chart -->
+                    <div class="col-md-6 pie">
+                        <!-- For Distribution Pie Graph -->
+                        <div class="row head">
+                            <!-- Heading And Button Section -->
+                            <div class="col-md-6 ">
+                                <h5>Item Distribution Pie Chart</h5>
+                            </div>
+                            <div class="col-md-6 text-left">
+                                <ul>
+                                    <li class="radios">
+                                        <input type="radio"> <label>Percenteg</label>
+                                    </li>
+                                    <li class="radios">
+                                        <input type="radio"> <label>item count</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> <!-- End Of Heading And Button Section -->
+                        <div class="row">
+                            <!-- Start Of Pie Chart Section-->
+                            <div class="col-md-6 text-center bg">
+                                <p>Items Distribution</p>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Data -->
+                                <div class="row ">
+                                    <!-- For Small Item -->
+                                    <div class="col-md-7">
+                                        <ul class="small">
+                                            <li>small items :</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5 data1">
+                                        60 items
+                                    </div>
+                                </div><!-- End of Small Item -->
+                                <div class="row">
+                                    <!-- For Large Item -->
+                                    <div class="col-md-7">
+                                        <ul class="large">
+                                            <li>large items :</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5 data2">
+                                        40 items
+                                    </div>
+                                </div><!-- End Large Item -->
+                            </div> <!-- End Of Data -->
+                        </div> <!-- End Of Pie Chart Section-->
+                    </div> <!-- End Of Distribution Pie Graph -->
+                    <div class="col-md-6 pie">
+                        <!-- For Accuracy Pie Graph -->
+                        <div class="row head">
+                            <!-- Heading And Button Section -->
+                            <div class="col-md-6 ">
+                                <h5>Placement Accuracy Pie Chart</h5>
+                            </div>
+                            <div class="col-md-6 text-left">
+                                <ul>
+                                    <li class="radios">
+                                        <input type="radio"> <label>Percenteg</label>
+                                    </li>
+                                    <li class="radios">
+                                        <input type="radio"> <label>item count</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> <!-- End Of Heading And Button Section -->
+                        <div class="row">
+                            <!-- Start Of Pie Chart Section-->
+                            <div class="col-md-6 text-center bg">
+                                <p>Placement Accuracy</p>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Data -->
+                                <div class="row ">
+                                    <!-- For Small Item -->
+                                    <div class="col-md-7">
+                                        <ul class="small">
+                                            <li>Properly Placed Items :</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5 data1">
+                                        60 items
+                                    </div>
+                                </div><!-- End of Small Item -->
+                                <div class="row">
+                                    <!-- For Large Item -->
+                                    <div class="col-md-7">
+                                        <ul class="large">
+                                            <li>Mis-Placed Items :</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5 data2">
+                                        40 items
+                                    </div>
+                                </div><!-- End Large Item -->
+                            </div> <!-- End Of Data -->
+                        </div> <!-- End Of Pie Chart Section-->
+                    </div> <!-- End Of Accuracy Pie Graph -->
+                </section> <!-- End Of Pie Chart -->
+
+
+                .head {
+                    padding-left: 33px;
+                    padding-top: 37px;
+                }
+                .radios {
+                    background-color: #E5E9F2;
+                    color: #181818;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    letter-spacing: 0.19px;
+                    display: inline-block;
+                    padding: 5%;
+                    margin-top: -33px;
+                }
+                .radios li{
+                    display: inline-block;
+                }
+                .pie {
+                    background-color: #ffff;
+                    border-radius: 6px;
+                    text-transform: capitalize;
+                    letter-spacing: 0.29px;
+                    color: #181818;
+                    margin: 25px 0px 0px 25px;
+                }
+                .bg {
+                    background-image: url("../assets/image/pie.png");
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .bg p {
+                    padding: 148px 118px 148px 126px;
+                }
+                .data1 {
+                    font-size: 24px;
+                    font-weight: 600;
+                    padding-top: 139px;
+                }
+                .data2 {
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+                .pie ul {
+                    list-style-type: none;
+                    font-size: 24px;
+                }
+                .small li::before {
+                    list-style: circle;
+                    color: #002554;
+                    font-weight: bold;
+                    display: inline-block;
+                    content: "•";
+                    padding-top: 139px;
+                }
+                .large li::before {
+                    list-style: circle;
+                    color: #2ECCB8;
+                    font-weight: bold;
+                    display: inline-block;
+                    content: "•";
+                } 
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

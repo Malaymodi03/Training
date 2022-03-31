@@ -1,0 +1,580 @@
+/* fonts & icons */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;700&family=Poppins:wght@400;500;600&family=Titillium+Web:wght@300;400;600;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+* {
+    box-sizing: border-box;
+}
+
+.body{
+    background: #F4F5F7 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.clearfix:before,
+.clearfix:after {
+    width: 100%;
+    display: table;
+    content: '';
+}
+
+.container {
+    max-width: 1920px;
+    margin:0 auto;
+}
+
+.sections1{
+    display:inline-block;
+}
+.sections2{
+    display:inline-block;
+}
+
+/* header section */
+
+header{
+    background: #002554 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 15px #F4F5F7;
+    opacity: 1;
+    height:80px;
+}
+
+header .logo{
+    display: inline-block;
+    margin-top:9px;
+    margin-bottom: 9px;
+    width:138px;
+    height:62px;
+    margin-left:70px;
+}
+
+header .profile{
+    
+    width:42px;
+    float:right;
+    margin-top:19px;
+    margin-bottom: 19px;
+    margin-right: 70px;
+}
+
+ .sort {
+    color: var(--unnamed-color-8695c3);
+    text-align: left;
+    font: normal normal bold 20px/24px Proxima Nova Alt;
+    letter-spacing: 0.24px;
+    color: #8695C3;
+    opacity: 1;
+    display: inline-block;
+    margin-left:70px;
+    margin-right:40px;
+    margin-top:30px;
+
+}
+
+ .historical {
+    color: var(--unnamed-color-2eccb8);
+    text-align: left;
+    font: normal normal bold 20px/24px Proxima Nova Alt;
+    letter-spacing: 0.24px;
+    color: #2ECCB8;
+    opacity: 1;
+    display: inline-block;
+    margin-top:30px;
+    text-decoration: underline;
+}
+
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px){
+
+}
+
+
+@media only screen and (min-width: 577px) and (max-width: 767px){
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+}
+
+
+@media only screen and (min-width: 1400px) {
+     
+    .first-section{margin-left: 0px;}
+
+    .sections1{
+        border-right: 5px solid transparent;
+    }
+
+    .four-five{
+        border-right:5px solid transparent;
+    }
+}
+
+
+
+/* first-section */
+
+.first-section{
+    width:366px;
+    height:1216px;
+    /* margin-left:70px; */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 20px #3E3E3E0F;
+    border-radius: 6px;
+    opacity: 1;
+    display: inline-block;
+
+}
+
+.first-section .container{
+    width:366px;
+}
+
+.first-section .sect-heading{
+    margin-top:30px;
+    margin-left:49px;
+    margin-right:48px;
+    color: var(--unnamed-color-002554);
+    text-align: center;
+    font: normal normal bold 22px/27px Proxima Nova Alt;
+    letter-spacing: 0.26px;
+    color: #002554;
+    text-transform: capitalize;
+    opacity: 1;
+    width:269px;
+}
+
+
+.first-section .content-box{
+    margin-bottom: 50px;
+    margin-left:30px;
+    
+}
+
+.first-section .sub-box1{
+    background: var(--unnamed-color-e5e9f2) 0% 0% no-repeat padding-box;
+    background: #E5E9F2 0% 0% no-repeat padding-box; 
+    border-radius: 6px 0px 0px 6px;
+    opacity: 1;
+    padding:79px 28px 78px 28px;
+    display: inline-block;
+    width:160px;
+    height:181px;
+}
+
+.first-section .sub-box1 .sub-box1-content{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 20px/30px var(--unnamed-font-family-proxima-nova-alt);
+    text-align: center;
+    font: normal normal bold 20px/30px Proxima Nova Alt;
+    letter-spacing: 0.24px;
+    color: #181818;
+    opacity: 1;
+}
+
+
+.first-section .sub-box2{
+    width:129px;
+    height:181px;
+    display: inline-block;
+    padding:57px 36px 58px 35px;
+    background: var(--unnamed-color-002554) 0% 0% no-repeat padding-box;
+    background: #002554 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-bottom: -90px;
+    
+}
+
+.first-section .sub-box2 .sub-box2-number{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 54px/81px var(--unnamed-font-family-proxima-nova-alt);
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: normal normal bold 54px/81px Proxima Nova Alt;
+    letter-spacing: 2.7px;
+    color: #FFFFFF;
+    opacity: 1;
+   
+    margin:0;
+}
+
+
+/* second-section */
+
+.second-section {
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 30px #3E3E3E0F;
+    border-radius: 6px;
+    opacity: 1;
+    width:1374px;
+    height:101px;
+    display: inline-block;
+    margin-left:40px;
+    margin-bottom: 29px;
+}
+
+.second-section .filt{
+    margin-left:30px;
+    margin-top:39px;
+    margin-bottom: 39px;
+    font: var(--unnamed-font-style-normal) normal 600 18px/22px var(--unnamed-font-family-proxima-nova-alt);
+    color: var(--unnamed-color-8695c3);
+    text-align: left;
+    font: normal normal 600 18px/22px Proxima Nova Alt;
+    letter-spacing: 0.22px;
+    color: #8695C3;
+    opacity: 1;
+    display: inline-block;
+    width:61px;
+    height:22px;
+}
+
+.second-section .form-check{
+    display: inline-block;
+    background: var(--unnamed-color-e5e9f2) 0% 0% no-repeat padding-box;
+    background: #E5E9F2 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    width:121px;
+    height:36px;
+    
+}
+
+.second-section label{
+    font: var(--unnamed-font-style-normal) normal normal 16px/24px var(--unnamed-font-family-proxima-nova-alt);
+text-align: left;
+font: normal normal normal 16px/24px Proxima Nova Alt;
+letter-spacing: 0.19px;
+color: #181818;
+text-transform: capitalize;
+opacity: 1;
+}
+
+.second-section .col-md-8{
+    margin-top: 20.5px;
+    margin-bottom: 20.5px;
+}
+
+.second-section button{
+    background: var(--unnamed-color-e5e9f2) 0% 0% no-repeat padding-box;
+    background: #E5E9F2 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    font: var(--unnamed-font-style-normal) normal normal 11px/16.5px var(--unnamed-font-family-proxima-nova-alt);
+    text-align: left;
+    font: normal normal normal 11px/17px Proxima Nova Alt;
+    letter-spacing: 0.13px;
+    color: #181818;
+    text-transform: capitalize;
+    opacity: 0.5;
+    margin-left:20px;
+}
+
+.second-section .btna{
+    background: #8695C3 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: center;
+    font: normal normal bold 16px/27px Proxima Nova Alt;
+    letter-spacing: 0.19px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+    border-radius: 200px;
+    width:35px;
+    height:34px;
+}
+
+.second-section .btncal{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height:30px;
+}
+
+.second-section .playb{
+    margin-top:9px;
+}
+
+.second-section .reset{
+    border: 1px solid #2ECCB8;
+border-radius: 6px;
+opacity: 1;
+    text-align: left;
+font: normal normal 600 14px/21px Proxima Nova Alt;
+letter-spacing: 0.17px;
+color: #2ECCB8;
+text-transform: capitalize;
+opacity: 1;
+margin-top:10px;
+}
+
+
+/* third-section */
+.third-section{
+    width:1374px;
+    height:646px;
+    margin-left: 40px;
+}
+
+.third-section .perform{
+    text-align: left;
+    font: normal normal bold 18px/22px Proxima Nova Alt;
+    letter-spacing: 0.22px;
+    color: #2ECCB8;
+    opacity: 1;
+    margin-top: 50px;
+    
+    float: left;
+}
+
+.third-section ul{
+    list-style: none;
+    /* float:right; */
+    margin-top: 46px;
+}
+
+.third-section ul li{
+    display: inline-block;
+}
+
+.third-section ul li button{
+    height:36px;
+    background: #E5E9F2 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    margin-left: 20px;
+    border:none;
+    text-align: left;
+    font: normal normal 600 16px/24px Proxima Nova Alt;
+    letter-spacing: 0.19px;
+    color: #181818;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+
+
+
+
+/* fourth-section */
+
+.fourth-section{
+    width:668px;
+    height:412px;
+    display: inline-block;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 30px #3E3E3E0F;
+    border-radius: 6px;
+    opacity: 1;
+    margin-right: 41px;
+
+}
+
+.pie-chart-title{
+    text-align: left;
+    font: normal normal bold 18px/22px Proxima Nova Alt;
+    letter-spacing: 0.22px;
+    color: #2ECCB8;
+    opacity: 1;
+    margin-top: 37px;
+    float: left;
+}
+
+.fourth-section .first-row{
+    width:668px;
+
+}
+
+
+.fourth-section .first-row ul{
+    list-style: none;
+    margin-top: 30px;
+    float:right;
+    margin-right: 30px;
+    
+    
+}
+
+.fourth-section .first-row ul li{
+    display: inline-block;
+    margin-left: 5px;
+
+}
+
+.btn45
+{
+    background: #E5E9F2 0% 0% no-repeat padding-box;
+border-radius: 6px;
+opacity: 1;
+text-align: left;
+font: normal normal 600 16px/24px Proxima Nova Alt;
+letter-spacing: 0.19px;
+color: #181818;
+text-transform: capitalize;
+opacity: 1;
+border: none;
+}
+
+.fourth-section .first-half{
+    width:350px;
+    height:350px;
+    position: relative;
+}
+
+.fourth-section .first-half img{
+    width:100%;
+    
+}
+
+.fourth-section .first-half p{
+    position:absolute;
+    top:42%;
+    left:37%
+}
+
+.fourth-section .second-half{
+    width:278px;
+    padding: 0;
+}
+
+.fourth-section .second-half ul{
+    list-style: none;
+    margin-top: 131px;
+}
+
+
+.fourth-section .second-half ul li{
+    margin-bottom: 61px;
+}
+
+.fourth-section .second-half ul li img{
+    display: inline-block;
+}
+
+.fourth-section .second-half ul li p{
+    display: inline-block;
+}
+
+.fourth-section .second-half ul li .p1{
+    text-align: left;
+font: normal normal normal 24px/24px Proxima Nova Alt;
+letter-spacing: 0.29px;
+color: #181818;
+text-transform: capitalize;
+opacity: 1;
+}
+
+.fourth-section .second-half ul li .p2{
+    text-align: left;
+font: normal normal 600 24px/36px Proxima Nova Alt;
+letter-spacing: 0.29px;
+color: #181818;
+text-transform: capitalize;
+opacity: 1;
+}
+
+/* fifth-section */
+.fifth-section{
+    width:664px;
+    height:412px;
+    display: inline-block;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 30px #3E3E3E0F;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+.fifth-section .first-row{
+    width:668px;
+}
+
+.fifth-section ul{
+    list-style: none;
+    margin-top: 30px;
+    float:right;
+    margin-right: 30px;
+    padding: 0;
+
+}
+
+.fifth-section ul li{
+    display: inline-block;
+    margin-left: 5px;
+}
+.fifth-section .first-half{
+    width:350px;
+    height:350px;
+    position: relative;
+    
+}
+
+.fifth-section .first-half img{
+    width:100%;
+    
+}
+
+.fifth-section .first-half p{
+    position:absolute;
+    top:42%;
+    left:40%;
+}
+
+.fifth-section .second-half{
+    width:278px;
+    padding: 0;
+}
+
+.fifth-section .second-half ul{
+    list-style: none;
+    margin-top: 131px;
+}
+
+
+.fifth-section .second-half ul li{
+    margin-bottom: 61px;
+}
+
+.fifth-section .second-half ul li img{
+    display: inline-block;
+}
+
+.fifth-section .second-half ul li p{
+    display: inline-block;
+}
+
+.fifth-section .second-half ul li .p1{
+    text-align: left;
+font: normal normal normal 24px/24px Proxima Nova Alt;
+letter-spacing: 0.29px;
+color: #181818;
+text-transform: capitalize;
+opacity: 1;
+}
+
+.fifth-section .second-half ul li .p2{
+    text-align: left;
+font: normal normal 600 24px/36px Proxima Nova Alt;
+letter-spacing: 0.29px;
+color: #181818;
+text-transform: capitalize;
+opacity: 1;
+}

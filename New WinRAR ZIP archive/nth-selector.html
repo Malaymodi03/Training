@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth Selector</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        ul {
+            margin: 0px;
+            padding: 0px;
+
+            list-style: none;
+        }
+
+        ul>li>a:nth-child(n) {
+            color: red;
+            list-style-type: disc;
+        }
+
+        li>ul a:nth-child(1) {
+            color: blue;
+        }
+
+        li+a:nth-child(n) {
+            color: black
+        }
+
+        ul>li>ul>li>a:nth-child(1) {
+
+            color: black;
+
+        }
+
+        ul>li>ul>li>ul>li>a:nth-child(1) {
+            color: black;
+        }
+
+        ul>li>ul~li>a:nth-child(1) {
+            color: darkkhaki;
+        }
+
+        ul>li>a:nth-child(1) {
+            color: black;
+        }
+
+        /* ul>li>ul>li:nth-child(2n)
+        {
+            background-color: red;
+        } */
+        /* ul>li>ul>li:nth-child(n+2):nth-child(-n+3)
+        {
+            background-color: green;
+        } */
+        /* ul>li>ul>li:nth-child(n+4):nth-child(-n+5)
+        {
+            background-color: blue;
+        } */
+
+        ul>li:nth-child(n+1) a {
+            color: red;
+        }
+
+        ul>li>ul>li:nth-child(1) a {
+            color: red;
+        }
+
+        ul>li>ul>li:nth-child(n+2):nth-child(-n+3) a {
+            color: green;
+        }
+
+        ul>li>ul>li:nth-child(n+4):nth-child(-n+5) a {
+            color: blue;
+        }
+
+        ul>li>ul>ul>li:nth-child(2n) a {
+            color: red;
+        }
+
+
+        /* 1st nested list */
+
+        body>ul>li:nth-child(1)>ul>li:last-child>ul>li:nth-child(-n+2)>a {
+            color: red;
+        }
+
+        body>ul>li:nth-child(1)>ul>li:last-child>ul>li:nth-child(n+3):nth-child(-n+4)>a {
+            color: green;
+        }
+
+        body>ul>li:nth-child(1)>ul>li:last-child>ul>li:nth-child(n+5)>a {
+            color: blue;
+        }
+
+
+
+
+        /* 2nd list  */
+        body>ul>li:nth-child(2) a {
+            color: blue;
+        }
+
+        body>ul>li:nth-child(2)>ul>li:nth-child(n+1):nth-child(-n+2)>a {
+            color: red;
+        }
+
+        body>ul>li:nth-child(2)>ul>li:nth-child(n+3):nth-child(-n+4)>a {
+            color: green;
+        }
+
+        body>ul>li:nth-child(2)>ul>:nth-child(5)>li:nth-child(-n+1)>a {
+            color: blue;
+        }
+
+        /* 2nd nested list */
+        body>ul>li:nth-child(2)>ul>li:last-child>ul>li:nth-child(-n+1)>a {
+            color: blue;
+        }
+
+        body>ul>li:nth-child(2)>ul>li:last-child>ul>li:nth-child(n+2):nth-child(-n+3)>a {
+            color: red;
+        }
+
+        body>ul>li:nth-child(2)>ul>li:last-child>ul>li:nth-child(n+4):nth-child(-n+5)>a {
+            color: green;
+        }
+
+        /* 3rd list */
+
+
+        body>ul>li:nth-child(3)>a {
+            color: blue;
+        }
+
+        body>ul>li:nth-child(3)>ul>li:nth-child(n+1):nth-child(-n+3)>a {
+            color: blue;
+        }
+
+        body>ul>li:nth-child(3)>ul>li:nth-child(n+2):nth-child(-n+3)>a {
+            color: red;
+        }
+
+        body>ul>li:nth-child(3)>ul>li:nth-child(n+4):nth-child(-n+5)>a {
+            color: green;
+        }
+
+
+        /* 3rd nested list */
+        body>ul>li:nth-child(3)>ul>li:last-child>ul>li:nth-child(n+1):nth-child(-n+3)>a {
+            color: blue;
+        }
+
+        body>ul>li:nth-child(3)>ul>li:last-child>ul>li:nth-child(n+3):nth-child(-n+4)>a {
+            color: red;
+        }
+
+        body>ul>li:nth-child(3)>ul>li:last-child>ul>li:nth-child(n+5):nth-child(-n+5)>a {
+            color: green;
+        }
+
+
+
+        /* 4th list starts here */
+
+        body>ul>li:nth-child(4)>a {
+            color: green;
+        }
+
+        body>ul>li:nth-child(4)>ul>li:nth-child(n+1):nth-child(-n+3)>a {
+            color: blue;
+        }
+
+        body>ul>li:nth-child(4)>ul>li:nth-child(n+3):nth-child(-n+4)>a {
+            color: red;
+        }
+
+        body>ul>li:nth-child(4)>ul>li:nth-child(n+5):nth-child(-n+5)>a {
+            color: green;
+        }
+
+        /* 4th nested list starts here */
+        body>ul>li:nth-child(4)>ul>li:last-child>ul>li:nth-child(-n+1)>a {
+            color: green;
+        }
+
+        body>ul>li:nth-child(4)>ul>li:last-child>ul>li:nth-child(n+2):nth-child(-n+3)>a {
+            color: blue;
+        }
+
+        body>ul>li:nth-child(4)>ul>li:last-child>ul>li:nth-child(n+4):nth-child(-n+5)>a {
+            color: red;
+        }
+
+
+
+
+
+
+
+        /* 5th list starts here */
+
+
+        body>ul>li:nth-child(5)>a {
+            color: green;
+        }
+
+        body>ul>li:nth-child(5)>ul>li:nth-child(n+1):nth-child(-n+1)>a {
+            color: green;
+        }
+
+        body>ul>li:nth-child(5)>ul>li:nth-child(n+2):nth-child(-n+4)>a {
+            color: blue;
+        }
+
+        body>ul>li:nth-child(5)>ul>li:nth-child(n+4):nth-child(-n+5)>a {
+            color: red;
+        }
+
+
+        /* 5th nested list starts here */
+        body>ul>li:nth-child(5)>ul>li:last-child>ul>li:nth-child(n+1):nth-child(-n+2)>a {
+            color: green;
+        }
+
+        body>ul>li:nth-child(5)>ul>li:last-child>ul>li:nth-child(n+3):nth-child(-n+5)>a {
+            color: blue;
+        }
+
+        body>ul>li:nth-child(5)>ul>li:last-child>ul>li:nth-child(n+5):nth-child(-n+5)>a {
+            color: red;
+        }
+
+
+
+
+
+
+
+
+        /* body > ul > li:nth-child(5) > ul > li:last-child > ul > li:nth-child(n+2):nth-child(-n+4) > a{
+          color:blue;
+        }  */
+
+        /* body > ul > li:nth-child(2) > ul > li:last-child > ul > li:first-child > a{
+          color:pink;
+        } */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="1">Name red</a>
+            <ul>
+                <li><a href="1">Name red</a></li>
+                <li><a href="2">Name green</a></li>
+                <li><a href="3">Name green</a></li>
+                <li><a href="4">Name blue</a></li>
+                <li><a href="5">Name blue</a>
+                    <ul>
+                        <li><a href="1">Name red</a></li>
+                        <li><a href="2">Name red</a></li>
+                        <li><a href="3">Name green</a></li>
+                        <li><a href="4">Name green</a></li>
+                        <li><a href="5">Name blue</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="2">Name blue</a>
+            <ul>
+                <li><a href="1">Name red</a></li>
+                <li><a href="2">Name red</a></li>
+                <li><a href="3">Name green</a></li>
+                <li><a href="4">Name green</a></li>
+                <li><a href="5">Name blue</a>
+                    <ul>
+                        <li><a href="1">Name blue</a></li>
+                        <li><a href="2">Name red</a></li>
+                        <li><a href="3">Name red</a></li>
+                        <li><a href="4">Name green</a></li>
+                        <li><a href="5">Name green</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="3">Name blue</a>
+            <ul>
+                <li><a href="1">Name blue</a></li>
+                <li><a href="2">Name red</a></li>
+                <li><a href="3">Name red</a></li>
+                <li><a href="4">Name green</a></li>
+                <li><a href="5">Name green</a>
+                    <ul>
+                        <li><a href="1">Name blue</a></li>
+                        <li><a href="2">Name blue</a></li>
+                        <li><a href="3">Name red</a></li>
+                        <li><a href="4">Name red</a></li>
+                        <li><a href="5">Name green</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="4">Name green</a>
+            <ul>
+                <li><a href="1">Name blue</a></li>
+                <li><a href="2">Name blue</a></li>
+                <li><a href="3">Name red</a></li>
+                <li><a href="4">Name red</a></li>
+                <li><a href="5">Name green</a>
+                    <ul>
+                        <li><a href="1">Name green</a></li>
+                        <li><a href="2">Name blue</a></li>
+                        <li><a href="3">Name blue</a></li>
+                        <li><a href="4">Name red</a></li>
+                        <li><a href="5">Name red</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="5">Name green</a>
+            <ul>
+                <li><a href="1">Name green</a></li>
+                <li><a href="2">Name blue</a></li>
+                <li><a href="3">Name blue</a></li>
+                <li><a href="4">Name red</a></li>
+                <li><a href="5">Name red</a>
+                    <ul>
+                        <li><a href="1">Name green</a></li>
+                        <li><a href="2">Name green</a></li>
+                        <li><a href="3">Name blue</a></li>
+                        <li><a href="4">Name blue</a></li>
+                        <li><a href="5">Name red</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

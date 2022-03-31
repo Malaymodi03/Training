@@ -1,0 +1,138 @@
+/* Fonts & Icons */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Proxima Nova';
+    color: #73879c;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.clearfix:before,
+.clearfix:after {
+    width: 100%;
+    display: table;
+    content: '';
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+p:hover {
+    color: cornflowerblue;
+}
+
+.container-fluid .row .sub-heading1 p {
+    font: normal normal bold 20px/24px Proxima Nova Alt;
+    letter-spacing: 0.24px;
+    color: #8695C3;
+}
+
+.container-fluid .row .sub-heading1 p {
+    font: normal normal bold 20px/24px Proxima Nova Alt;
+    letter-spacing: 0.24px;
+    color: #2ECCB8;
+}
+
+
+/* Section-1 */
+
+.section-1 .row .col-md-9 .row1,
+.row2,
+.row3 {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 30px #3E3E3E0F;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+.section-1 .row .col-md-3 .row p {
+    font: normal normal bold 22px/27px Proxima Nova Alt;
+    letter-spacing: 0.26px;
+    color: #002554;
+    text-transform: capitalize;
+}
+
+.section-1 .row .col-md-3 .row .col-md-8 span {
+    font: normal normal bold 20px/30px Proxima Nova Alt;
+    letter-spacing: 0.24px;
+    color: #181818;
+    opacity: 1;
+}
+
+.section-1 .row .col-md-3 .row .col-lg-4 span {
+    font: normal normal bold 54px/81px Proxima Nova Alt;
+    letter-spacing: 2.7px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.section-1 .row .col-md-9 .row1 .col-md-3 .formcheck {
+    background: #E5E9F2 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    font: normal normal normal 16px/24px Proxima Nova Alt;
+    letter-spacing: 0.19px;
+    color: #181818;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.section-1 .row .col-md-9 .row1 .col-md-8 .form-group {
+    background: #E5E9F2 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    font: normal normal normal 16px/27px Proxima Nova Alt;
+    letter-spacing: 0.19px;
+    color: #181818;
+    text-transform: capitalize;
+}
+
+.section-1 .row .col-md-9 .row2 .col-md-3 {
+    font: normal normal bold 18px/22px Proxima Nova Alt;
+    letter-spacing: 0.22px;
+    color: #2ECCB8;
+}
+
+.section-1 .row .col-md-9 .row2 .col-md-6 .check4 {
+    background: #E5E9F2 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    font: normal normal 600 16px/24px Proxima Nova Alt;
+    letter-spacing: 0.19px;
+    color: #181818;
+    text-transform: capitalize;
+}
+
+.row3 .col-lg-6 {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 30px #3E3E3E0F;
+    border-radius: 6px;
+}
+
+.row3 .col-lg-6 .row .col-md-6 p {
+    font: normal normal bold 18px/22px Proxima Nova Alt;
+    letter-spacing: 0.22px;
+    color: #2ECCB8;
+}
+
+.row3 .col-lg-6 .row .col-md-6 .row .col-sm-6 {
+    background: #E5E9F2 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    font: normal normal 600 16px/24px Proxima Nova Alt;
+    letter-spacing: 0.19px;
+    color: #181818;
+    text-transform: capitalize;
+}

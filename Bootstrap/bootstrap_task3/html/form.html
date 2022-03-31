@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        .register_form {
+            max-width: 600px;
+            margin: 50px auto;
+        }
+
+        .register_form .fieldset {
+            float: left;
+            width: 100%;
+        }
+
+        .register_form .fieldset .field {
+            float: left;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .register_form .fieldset .field.half {
+            width: 33.33%;
+        }
+
+
+        .register_form .fieldset .field label {
+            display: block;
+        }
+
+
+        .field input {
+            background-color: #F0F8FF;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get" class="register_form clearfix">
+        <div class="fieldset">
+            <div class="field half">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname">
+            </div>
+
+            <div class="field half">
+                <label for="middlename">Middle Name</label>
+                <input type="text" name="middlename" id="middlename">
+            </div>
+
+            <div class="field half">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname">
+            </div>
+        </div>
+        <div class="fieldset">
+            <div class="field">
+                <label for="email">Email-ID</label>
+                <input type="email" id="email" name="email">
+            </div>
+        </div>
+        <div class="fieldset">
+            <div class="field">
+                <label for="number">Contact Number</label>
+                <input type="number" id="number" name="number">
+            </div>
+        </div>
+        <div class="fieldset">
+            <div class="field">
+                <label for="city">City</label>
+                <select id="city" name="city">
+                    <option value="">Select City</option>
+                    <option value="ahmedabad">Ahmedabad</option>
+                    <option value="baroda">Baroda</option>
+                    <option value="rajkot">Rajkot</option>
+                    <option value="surat">Surat</option>
+                </select>
+            </div>
+        </div>
+        <div class="field">
+            <label for="address">Address</label>
+            <textarea name="address" id="address" rows="10" cols="30">
+                </textarea>
+        </div>
+        </div>
+        <div class="cblist">
+            <ul>
+                <label for="ahmedabad">Ahmedabad</label>
+
+        </div>
+    </form>
+
+
+</body>
+
+</html>
