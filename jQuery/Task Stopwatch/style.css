@@ -1,0 +1,26 @@
+.timerow{
+    margin-left: 250px;
+    margin-right:250px;
+   
+}
+
+
+.btntimerow{
+    padding:0 300px;
+}
+
+.msgrow{
+    border : 1px solid grey;
+    padding-top: 10px;
+}
+
+.logrow{
+    margin-left: 250px;
+    margin-right:250px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+    
