@@ -1,0 +1,33 @@
+.body{
+    text-align: center;
+}
+
+.heading{
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+    margin: 0 250px;
+}
+
+.btnsteps{
+    display: inline-block;
+    width:20%;
+    margin:10px;
+    text-align: center;
+}
+
+.btntab{
+    margin: 15px 550px 0px;
+    text-align: center;
+
+}
+
+.myform{
+    width:30%;
+    display: inline-block;
+
+}
+
+
+.tabledisplay{
+    margin-top: 200px;
+}
