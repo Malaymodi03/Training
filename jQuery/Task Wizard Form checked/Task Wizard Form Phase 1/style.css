@@ -31,3 +31,21 @@
 .tabledisplay{
     margin-top: 200px;
 }
+
+label.error {
+    color: red;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+#gendervalue-error {
+    color: blue;
+    font-size: 1rem;
+    display: block;
+    margin-top: 5px;
+}
+
+.btnsteps{
+    background-color:goldenrod;
+}
