@@ -1,11 +1,13 @@
 $(document).ready(function(){
 
+    $(".btnsteps").eq(0).css("background-color","royalblue");
+
      //implementation of datepicker plugin
      $(function(){
          $("#dob").datepicker({  maxDate: 0 });
      });
 
-     //input mask
+     //input mask for ipadd
      $('#ipadd').mask('0ZZ.0ZZ.0ZZ.0ZZ', { translation: { 'Z': { pattern: /[0-9]/, 
      optional: true } } });
           
@@ -34,11 +36,8 @@ $(document).ready(function(){
 });
 
     //global variables
-    var i,p;
-    var current_row;
-    var index;
-    var errorind;
-    var ed;
+    var i,p,current_row,index,errorind,ed;
+
     //save and next button
     $('.btnnext').click(function(){
          i = $(this).parent().index();
@@ -69,6 +68,14 @@ $(document).ready(function(){
     return this.optional(element) || /^[a-z]+$/i.test(value);
   }, "Letters only please"); 
 
+
+//ip adress validation
+  $.validator.addMethod('IP4Checker', function(value) {
+    var ip = /^(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))\.(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))\.(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))\.(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))$/; 
+    return value.match(ip);
+    }, 'Invalid IP address');
+
+//jquery validation plugin
  $('#myform').validate({
    errorClass: "error fail-alert",
     ignore:[],
@@ -134,6 +141,7 @@ $(document).ready(function(){
             },
   
         ipadd : { 
+                IP4Checker: true,
                 required: true,
                 minlength: 1
                },   
@@ -167,18 +175,22 @@ $(document).ready(function(){
         about: 'Please say about yourself',
         hours : 'Please Enter Hours between 0 to 24',
         zipcode : 'Please enter zipcode',
-        ipadd : 'Please enter ip address',
-        money : 'Please enter money',
 
-        
+        lastname:{
+            required: "Enter your last name",
+            minlength:"Enter at least (2) characters",
+            IP4Checker:"Invalid ip address"
+        },
+
+        money : 'Please enter money',    
     },
 
     submitHandler: function(form) {
-        
-        // form.submit();
+         // form.submit();
         alert("form submitted")
       }
 });
+
    //submit button
    $(".btnsubmit").click(function(e){
     e.preventDefault();
@@ -247,11 +259,8 @@ $(document).ready(function(){
          var s = $(this).index();
          $(".btnsteps").eq(s).css("background-color","royalblue");
          $(".btnsteps").not($(".btnsteps").eq(s)).css("background-color","");
-  
-      
-       
-    }
-     else {
+}
+    else {
 
         // console.log("inside else");
         errorind = $("input.error").first().parent().index();
@@ -279,21 +288,26 @@ $(document).ready(function(){
 });
     //delete button
     $(document).on("click", ".btndelete", function(){    
-        $(this).parents("tr").remove();          
-        //var d  = $(this).closest('tr').index();        
-        //$('.displayrow').eq(d).remove();
-        $( "table tbody tr" ).each(function(d){
-            
-                 $($(this).find("td")[0]).html(d+1);
-                 console.log(d);
-        });
-
-
+       if(confirm("Are you sure you want to delete this?")){
+            $(this).parents("tr").remove();          
+            //var d  = $(this).closest('tr').index();        
+            //$('.displayrow').eq(d).remove();
+            $( "table tbody tr" ).each(function(d){
+                
+                     $($(this).find("td")[0]).html(d+1);
+                     console.log(d);
+            });
+        }
+        else{
+            return false;
+        }
     });
     //edit button
     $(document).on("click",".btnedit",function(){
        ed  = $(this).closest('tr').index(); 
+       $('.btndelete').prop("disabled",false);
        $('.btndelete').eq(ed).prop("disabled",true);
+      // $('.btndelete').not(eq(ed)).prop("disabled",false);
        // $('.btndelete').prop("disabled",true);
         $('.btnsubmit').hide();
         $('.btnupdate').show();
