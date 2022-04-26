@@ -1,0 +1,96 @@
+body{
+    background-color: lightskyblue;
+}
+#heading{
+    margin-top: 50px;
+    border-bottom: 2px solid black;
+    width:540px;
+    margin-left:165px;
+    
+}
+
+.maindiv{
+    border: 2px solid black;
+    margin:50px;
+    width:900px;
+    margin-left: 350px;
+    background-color: white;
+    
+    
+}
+
+#screen{
+    width:1000px;
+    margin-top:50px;
+}
+
+.btnc{
+    display: grid;
+    border: 2px solid black;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    width:70px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* eqal button */
+#equal{
+    border: 2px solid black;
+    width:165px;
+}
+
+/* clear button */
+#clear{
+    border: 2px solid black;
+    width:70px;
+}
+
+/* square */
+#square{
+    border:2px solid black;
+    width:70px;
+}
+
+/* squareroot button */
+#squareroot{
+    border:2px solid black;
+    width:70px;
+}
+
+/* backspace button */
+#backspace{
+    border:2px solid black;
+    width:70px;
+}
+
+/* user input */
+#userinput{
+    margin-left: 165px;
+    margin-right:250px;
+    width:550px;
+}
+
+.row2{
+    display: grid;
+    grid-row-start: 2;
+}
+
+#buttons{
+    margin-top: 50px;
+    margin-left: 165px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 1000px;
+}
+
+#firstrow{
+    width: 45px;
+}
+
+table{
+    border-spacing: 30px;
+}
+
+td{
+    background-color: aliceblue;
+}
