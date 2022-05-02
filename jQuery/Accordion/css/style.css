@@ -1,0 +1,15 @@
+.btn, .slidecontent {
+    padding: 5px;
+    text-align: center;
+    background-color: gold;
+    border: solid 1px #c3c3c3;
+  }
+  
+  .slidecontent{
+    padding: 50px;
+    
+  }
+
+  .btn{
+      margin-left:650px;
+  }
